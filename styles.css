@@ -39,7 +39,7 @@ body {
     height: 100%;
 }
 .back {
-    transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(180deg);
     background: #f1f1f1;
 }
 h2 {
@@ -60,4 +60,10 @@ i {
     color: #ff0000;
     margin: 20px 0;
     font-size: 30px;
+}
+.card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
 }
